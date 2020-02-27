@@ -10,8 +10,8 @@ resource "aws_security_group" "instances" {
 
   ingress {
     protocol    = "tcp"
-    from_port   = 2048
-    to_port     = 2048
+    from_port   = 20480
+    to_port     = 20480
     cidr_blocks = ["0.0.0.0/0"] #[aws_default_vpc.default.cidr_block]
   }
 
@@ -30,3 +30,4 @@ resource "aws_security_group" "instances" {
   }
 
 }
+
